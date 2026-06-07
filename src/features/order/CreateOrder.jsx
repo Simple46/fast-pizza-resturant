@@ -46,13 +46,23 @@ function CreateOrder() {
       <Form method="POST">
         <div>
           <label>First Name</label>
-          <input type="text" name="customer" required />
+          <input
+            type="text"
+            name="customer"
+            required
+            className="w-full rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3"
+          />
         </div>
 
         <div>
           <label>Phone number</label>
           <div>
-            <input type="tel" name="phone" required />
+            <input
+              type="tel"
+              name="phone"
+              required
+              className="w-full rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3"
+            />
           </div>
           {formErrors?.phone && <p>{formErrors.phone}</p>}
         </div>
@@ -64,7 +74,7 @@ function CreateOrder() {
               type="text"
               name="address"
               required
-              className="w-full rounded-full px-4 py-2 text-sm transition-all duration-300 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3"
+              className="w-full rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3"
             />
           </div>
         </div>
